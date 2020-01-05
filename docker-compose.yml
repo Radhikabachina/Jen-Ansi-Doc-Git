@@ -4,7 +4,7 @@ services:
   web:
     image: radhikabachina/tomcatcust01
     build: 
-      context: ./home/ec2-user/project/workspace/pp-job1/JAGD
+      context: ./
       dockerfile: Dockerfile
     ports:
       - "8000:8080"
