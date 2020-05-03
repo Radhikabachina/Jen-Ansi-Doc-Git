@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Java' }
+    agent { label 'G2' }
     stages { 
         stage ("SCM Checkin-1") {
             steps {
@@ -18,10 +18,10 @@ pipeline {
                     }
                 }
                 dir("samplemaven") {
-                    git branch: 'master', url: 'https://github.com/Vishwanathms/SampleMaven'
+                    git branch: 'master', url: 'https://github.com/Radhikabachina/SampleMaven'
                 } 
                 dir("JAGD") {
-                   git branch: 'master', url: 'https://github.com/Vishwanathms/Jen-Ansi-Doc-GIT'
+                   git branch: 'master', url: 'https://github.com/Radhikabachina/Jen-Ansi-Doc-GIT'
                 }
             }
         }
